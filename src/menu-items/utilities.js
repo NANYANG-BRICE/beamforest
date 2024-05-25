@@ -1,69 +1,71 @@
 // assets
-import { IconTypography, IconPalette, IconShadow, IconWindmill } from '@tabler/icons-react';
+import StackedLineChartIcon from '@mui/icons-material/StackedLineChart';
+import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
+import SettingsInputAntennaIcon from '@mui/icons-material/SettingsInputAntenna';
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
+import GridViewIcon from '@mui/icons-material/GridView';
+
 
 // constant
 const icons = {
-  IconTypography,
-  IconPalette,
-  IconShadow,
-  IconWindmill
+  GridViewIcon,
+  ElectricBoltIcon,
+  SettingsInputAntennaIcon,
+  QuestionMarkIcon,
+  StackedLineChartIcon
 };
 
 // ==============================|| UTILITIES MENU ITEMS ||============================== //
 
 const utilities = {
   id: 'utilities',
-  title: 'Utilities',
+  // title: 'Pages',
   type: 'group',
   children: [
     {
-      id: 'util-typography',
-      title: 'Typography',
+      id: '',
+      title: 'Dashboard',
       type: 'item',
-      url: '/utils/util-typography',
-      icon: icons.IconTypography,
+      url: '',
+      icon: icons.GridViewIcon,
       breadcrumbs: false
     },
+
     {
-      id: 'util-color',
-      title: 'Color',
+      id: 'previsions',
+      title: 'Previsions',
       type: 'item',
-      url: '/utils/util-color',
-      icon: icons.IconPalette,
+      url: 'previsions',
+      icon: icons.StackedLineChartIcon,
       breadcrumbs: false
     },
+
     {
-      id: 'util-shadow',
-      title: 'Shadow',
+      id: 'et-cap',
+      title: 'ET-CAP',
       type: 'item',
-      url: '/utils/util-shadow',
-      icon: icons.IconShadow,
+      url: 'et-cap',
+      icon: icons.ElectricBoltIcon,
       breadcrumbs: false
     },
+
     {
-      id: 'icons',
-      title: 'Icons',
-      type: 'collapse',
-      icon: icons.IconWindmill,
-      children: [
-        {
-          id: 'tabler-icons',
-          title: 'Tabler Icons',
-          type: 'item',
-          url: '/icons/tabler-icons',
-          breadcrumbs: false
-        },
-        {
-          id: 'material-icons',
-          title: 'Material Icons',
-          type: 'item',
-          external: true,
-          target: '_blank',
-          url: 'https://mui.com/material-ui/material-icons/',
-          breadcrumbs: false
-        }
-      ]
-    }
+      id: 'dim',
+      title: 'Dim',
+      type: 'item',
+      url: 'dim',
+      icon: icons.SettingsInputAntennaIcon,
+      breadcrumbs: false
+    },
+
+    {
+      id: 'aide',
+      title: 'Aide',
+      type: 'item',
+      url: 'aide',
+      icon: icons.QuestionMarkIcon,
+      breadcrumbs: false
+    },
   ]
 };
 

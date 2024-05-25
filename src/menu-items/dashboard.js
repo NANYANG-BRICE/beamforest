@@ -18,7 +18,43 @@ const dashboard = {
       url: '/dashboard/default',
       icon: icons.IconDashboard,
       breadcrumbs: false
-    }
+    },
+    
+    {
+      id: '',
+      title: 'Previsions',
+      type: 'item',
+      url: '/views/previsions',
+      icon: icons.IconTypography,
+      breadcrumbs: false
+    },
+    
+    {
+      id: '',
+      title: 'ET-CAP',
+      type: 'item',
+      url: '/views/et-cap',
+      icon: icons.IconTypography,
+      breadcrumbs: false
+    },
+    
+    {
+      id: '',
+      title: 'Dim',
+      type: 'item',
+      url: '/views/dim',
+      icon: icons.IconTypography,
+      breadcrumbs: false
+    },
+    
+    {
+      id: '',
+      title: 'Aide',
+      type: 'item',
+      url: '/views/aide',
+      icon: icons.IconTypography,
+      breadcrumbs: false
+    },
   ]
 };
 
